@@ -47,6 +47,23 @@ testing, and submitting.
    bounties, but there is a minimum payout (currently $0.25), so they only
    become claimable once they add up.
 
+## Picking a bounty: how scoring changes everything
+
+Not all bounties reward the same thing. Before you commit an evening to
+one, find its scoring type in the kit and weigh it honestly:
+
+| Scoring type | How you win | What it rewards |
+| --- | --- | --- |
+| Test suite / grader | Pass the most checks, fastest | Correctness you can verify locally before submitting |
+| Practice floor + final | Beat a published score, then a house entry | Steady, reproducible strength across every test instance |
+| Forecast / prediction | Lowest error against a real-world outcome | A validated model — backtest it before you trust it |
+| AI or human judges | Win pairwise comparisons | One strong, legible idea; in a field of thousands, also luck |
+| Referrals (like this guide) | Most verified signups through your link | Distribution: the best guide nobody reads finishes last |
+
+A beginner's rule of thumb: enter where the kit lets you *measure* your
+entry before the deadline. Measurement turns effort into rank; unmeasured
+contests turn effort into tickets.
+
 ## Your first entry, step by step
 
 1. **Sign up** at https://make.fun/r/rh2b11xn and finish your profile.
@@ -87,6 +104,19 @@ testing, and submitting.
   message is delivered; a bundle made in the same breath as the code can
   attach an empty record and fail. Finish the build, then bundle, check,
   and submit.
+
+## Pre-submit checklist
+
+The exact list we run before every submission:
+
+- [ ] `RULES.txt` read end to end, in this kit, for this bounty
+- [ ] Deadline and paid places confirmed in `competition.yaml`
+- [ ] Entry built and revised inside the recorded session
+- [ ] Local grader or practice run passed by the *exact* file being sent
+- [ ] Strength checked on every practice instance, not just the first
+- [ ] Bundle created after the last build message, not in the same breath
+- [ ] `makefun check`: **0 failed**
+- [ ] Claim code saved somewhere safe after submitting
 
 ## About this guide
 
